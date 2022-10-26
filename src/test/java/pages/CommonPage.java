@@ -20,7 +20,7 @@ public class CommonPage {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	protected void moveToElement(WebElement element){
+	protected static void moveToElement(WebElement element){
 		Actions action = new Actions(TestRule.getDriver());
 		action.moveToElement(element).build().perform();
 	}

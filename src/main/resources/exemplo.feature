@@ -4,7 +4,13 @@ Feature: Smoke Test Tricentis
   Background:
     Given que visite a home page do app tricentis
 
-  @run
+  @run @TESTE-001
   Scenario: Abrir formulário
     When clicar para iniciar preenchimento de seguro
     Then o formulário deverá aparecer na tela com sucesso
+
+  @run @TESTE-002
+  Scenario: Abrir formulário
+    When clicar para iniciar preenchimento de seguro
+    And o formulário deverá aparecer na tela com sucesso
+    Then informar primeira aba de dados do cliente

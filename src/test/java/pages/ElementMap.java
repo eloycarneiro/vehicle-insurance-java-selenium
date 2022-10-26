@@ -10,6 +10,9 @@ public class ElementMap extends CommonPage{
     @FindBy(id = "selectedinsurance")
     protected WebElement txtSelectedInsurance;
 
+    @FindBy(className = "idealsteps-wrap")
+    protected WebElement idealsteps_wrap;
+
 //    @FindBy(name = "submit_search")
 //    protected WebElement btnPesquisarProduto;
 
