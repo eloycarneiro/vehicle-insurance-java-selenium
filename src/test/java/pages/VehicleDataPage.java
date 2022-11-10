@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import utils.TestRule;
 
-public class VehicleDataPage extends ElementMap {
+public class VehicleDataPage extends VehicleDataElementMap {
 
     private WebDriver driver  = TestRule.getDriver();
     public VehicleDataPage(){

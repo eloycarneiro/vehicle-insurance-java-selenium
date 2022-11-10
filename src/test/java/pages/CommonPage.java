@@ -13,8 +13,6 @@ import java.time.Duration;
 
 public class CommonPage {
 
-	//private String idNav = "nav_automobile";
-
 	protected static WebDriver driver = TestRule.getDriver();
 
 	protected static void waitVisibilityOf(WebElement element){
@@ -22,15 +20,15 @@ public class CommonPage {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	protected static void moveToElement(WebElement element){
-		Actions action = new Actions(driver);
-		action.moveToElement(element).build().perform();
-	}
+//	protected static void moveToElement(WebElement element){
+//		Actions action = new Actions(driver);
+//		action.moveToElement(element).build().perform();
+//	}
 
-	protected static void clickToElement(WebElement element){
-		Actions action = new Actions(driver);
-		action.moveToElement(element).click().perform();
-	}
+//	protected static void clickToElement(WebElement element){
+//		Actions action = new Actions(driver);
+//		action.moveToElement(element).click().perform();
+//	}
 
 
 }

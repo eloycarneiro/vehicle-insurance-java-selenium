@@ -54,10 +54,10 @@ public class TestRule extends TestWatcher {
 
     public static void abrirNavegador(String url){
         ChromeOptions chromeOpts = new ChromeOptions();
-        chromeOpts.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Eloy_\\IdeaProjects\\vehicle-insurance-java-selenium\\chromedriver.exe");
+//        chromeOpts.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Eloy_\\IdeaProjects\\vehicle-insurance-java-selenium\\chromedriver.exe");
         chromeOpts.addArguments("start-maximized");
-//        Utils.setDriverByOS();
+        Utils.setDriverByOS();
 
         driver = new ChromeDriver(chromeOpts);
         driver.manage().window().maximize();

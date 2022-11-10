@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends ElementMap {
+public class HomePage extends VehicleDataElementMap {
 
     public HomePage(){
 
@@ -11,6 +11,6 @@ public class HomePage extends ElementMap {
 
     public void clickNav(){
         CommonPage.waitVisibilityOf(txtNavAutomobile);
-        CommonPage.clickToElement(txtNavAutomobile);
+        txtNavAutomobile.click();
     }
 }
