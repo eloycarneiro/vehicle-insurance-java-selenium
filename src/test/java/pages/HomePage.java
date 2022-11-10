@@ -10,9 +10,7 @@ public class HomePage extends ElementMap {
     }
 
     public void clickNav(){
-        //CommonPage.waitVisibilityOf(txtNavAutomobile);
-        //CommonPage.moveToElement(txtNavAutomobile);
-
-        txtNavAutomobile.click();
+        CommonPage.waitVisibilityOf(txtNavAutomobile);
+        CommonPage.clickToElement(txtNavAutomobile);
     }
 }
